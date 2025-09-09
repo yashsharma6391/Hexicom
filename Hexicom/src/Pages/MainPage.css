@@ -1,0 +1,77 @@
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 9;
+    margin-top: 80px;
+}
+
+.AboutCompany{
+     height: "100vh";
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     box-sizing: border-box;
+     padding: 80px;
+     padding-top: 20px;
+     text-align: justify;
+     background-color: rgb(234, 228, 221);
+     gap: 10px;
+     text-justify: inter-word; 
+
+
+}    
+.AboutCompanyPara{
+    font-size: 20px;
+    font-weight: 400;
+}   
+.list{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    text-justify: inter-word;
+    text-align: justify;
+     font-size: 20px;
+    font-weight: 400;
+    
+} 
+.AboutCompany h3{
+    color: blue;
+    text-decoration: underline;
+
+}
+.value{
+    display: flex;
+    align-items: flex-end;
+    left: 0;
+    width: 100%;
+    color: blue;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+.listofvalues{
+    width: 100%;
+    
+}
+.listofvalues li{
+    list-style-type: none;
+}
+@media screen and (max-width:768px){
+     .AboutCompany{
+        padding: 30px;
+        
+     }
+      .AboutCompany h1{
+        font-size: 30px;
+        font-weight: 700;
+
+      }
+      .AboutCompanyPara{
+        font-size: 17px;
+        /* background-color: white; */
+      }
+} 
+    
