@@ -30,7 +30,7 @@ function App() {
          <Route path="/" element={<MainPage sidebar={sidebar} setSidebarfunc={setSidebarfunc}/>} />
         <Route path="/about" element={<About sidebar={sidebar} setSidebarfunc={setSidebarfunc}/>} />
         <Route path="/contact" element={<Contact sidebar={sidebar} setSidebarfunc={setSidebarfunc}/>} />
-        <Route path='/address' element={<Address sidebar={sidebar} setSidebarfunc={setSidebarfunc} />}/>
+{/*         <Route path='/address' element={<Address sidebar={sidebar} setSidebarfunc={setSidebarfunc} />}/> */}
         {/* <Route path="/services" element={<Services />} /> */}
        
       </Routes>
