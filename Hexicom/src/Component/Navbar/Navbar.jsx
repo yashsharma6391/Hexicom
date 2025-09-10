@@ -11,8 +11,8 @@ const Navbar = ({setSidebarfunc, sidebar}) => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-    { name: "Address", path: "/address" },
-    { name: "Services", path: "/services" },
+    // { name: "Address", path: "/address" },
+    // { name: "Services", path: "/services" },
     //  {name: "Home"},
     //  {name: "Home"},
   ];
