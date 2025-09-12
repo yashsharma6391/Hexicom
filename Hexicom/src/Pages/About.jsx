@@ -17,7 +17,7 @@ const About = ({sidebar, setSidebarfunc}) => {
     <div className='About'>
         <Sidebar sidebar={sidebar}/>
         <div className="AboutCompany" data-aos="fade-up">
-            <h1>COMPANY PROFILE</h1>
+            <h1>ABOUT US</h1>
             <div className="profile_grid">
                 <div className="profile_detail1">Group Business Name</div>
                 <div className="profile_detail2">HEXICOM INFRASTRUCTURES INDIA PVT. LTD.</div>
