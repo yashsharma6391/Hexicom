@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { FiX } from "react-icons/fi";
 import Sidebar from "../Sidebar/Sidebar";
+import NavLogo from "./NavLogo";
 
 const Navbar = ({setSidebarfunc, sidebar}) => {
   const NavMenu = [
@@ -22,7 +23,8 @@ const Navbar = ({setSidebarfunc, sidebar}) => {
   return (
     <div className="navbar">
       <div className="nav_logo">
-        <NavbarLogo />
+        {/*<NavbarLogo />*/}
+        <NavLogo/>
       </div>
       <div className="nav_menu">
         {NavMenu.map((item, index) => {
