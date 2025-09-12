@@ -1,0 +1,101 @@
+.companylogo{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: wheat; */
+    
+}
+.logo_img{
+  display: flex;
+  align-items: center;
+  /* width: 20%; */
+  height: 100%;
+}
+.logo_img img{
+  height: 100%;
+  /* width: 100%; */
+}
+.companyname{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* width: 80%; */
+  position: relative;
+}
+.Letters{
+  display: flex;
+  width: 100%;
+  color: #007bff;
+
+}
+.leter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  /* width: 100%; */
+  /* position: relative; */
+}
+.leter img{
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  ;
+  
+ 
+}
+.arrows{
+    font-size: 10px;
+    /* background-color:aqua; */
+    height: 15px;
+    width: 15px;
+    position:absolute;
+    /* top: 50px; */
+    right: 15px;
+    bottom: 38px;
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    
+}
+.arrow1{
+  
+    background: linear-gradient(135deg, #007bff 50%, #ffffff 50%);
+
+}
+.arrow4{
+        background: linear-gradient(-135deg, orange 50%,#ffffff 50%);
+}
+.tagline{
+    font-size: 10px;
+    display: flex;
+    top: 25px;
+    color: navy;
+    font-family: sans-serif;
+    position: relative;
+    right: 155px;
+}
+@media screen and (max-width:768px) {
+    .logo_img{
+        width: 60px;
+    }
+    .companyname{
+        font-size: 30px;
+    }
+    .tagline{
+        font-size: 8px;
+        right: 155px;
+    }
+    .arrows{
+        bottom: 38px;
+    }
+}
