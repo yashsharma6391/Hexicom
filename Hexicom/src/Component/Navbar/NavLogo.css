@@ -84,6 +84,46 @@
     position: relative;
     right: 129px;
 }
+.logo_img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;       /* so the effect doesn’t spill outside the logo */
+}
+
+/* logo image itself */
+.logo_img img {
+  display: block;
+  width: 220px;           /* set to your logo size */
+  height: auto;
+}
+
+/* the moving white diagonal flow */
+.logo_img::before {
+  content: "";
+  position: absolute;
+  inset: -50%;  /* big enough so diagonal stripe can slide fully */
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    /* rgba(255,255,255,0.2) 45%,
+    rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0.2) 55%, */
+    rgba(0, 123, 255, 0.2) 45%,
+    rgba(0, 123, 255, 1) 50%,
+   rgba(21, 60, 101, 0.8) 55%,
+    
+    transparent 100%
+  );
+  transform: translate(-120%, -120%);
+  animation: logoFlow 3.5s linear infinite;
+  pointer-events: none;     /* clicks go through */
+  mix-blend-mode: screen;   /* lets white mix nicely with any logo colors */
+}
+
+@keyframes logoFlow {
+  from { transform: translate(-120%, -120%); }
+  to   { transform: translate(120%, 120%); }
+}
 @media screen and (max-width:768px) {
     .logo_img{
         width: 60px;
