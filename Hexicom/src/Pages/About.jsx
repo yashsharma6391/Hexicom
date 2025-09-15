@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "/About.css";
+import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
