@@ -3,7 +3,7 @@ import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
-import { AboutData } from "../AboutData";
+import { AboutData } from "./AboutData";
 const About = ({ sidebar, setSidebarfunc }) => {
   useEffect(() => {
     setSidebarfunc(false);
