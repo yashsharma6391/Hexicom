@@ -55,7 +55,8 @@
     border: 2px solid grey;
     box-shadow:  0px 0px 10px 0px;
     &:hover{
-        background-color: red;
+/*         background-color: red; */
+        background: linear-gradient(135deg,#153c65 40%, #007bff 50%, #153c65 75%  );
         color: white;
         border-radius: 5px;
         
