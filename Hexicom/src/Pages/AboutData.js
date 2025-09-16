@@ -6,12 +6,12 @@ export const AboutData = [
         profileDetail:"HEXICOM INFRASTRUCTURES INDIA PVT. LTD."
 
     },
-      {
-        logo: "building2.png",
-        profileName:"Year of Establishment",
-        profileDetail:"2025"
+    //   {
+    //     logo: "building2.png",
+    //     profileName:"Year of Establishment",
+    //     profileDetail:"2025"
 
-    },
+    // },
       {
         logo: "legal.png",
         profileName:"Legal Entity Status",
@@ -30,16 +30,17 @@ export const AboutData = [
         profileDetail:"Services of - IT-Telcom | Electrical & Automation | FTTH - GPON Infra | Solar EPC | Civil Infrastructure | Satcom Services | CCTV & Surveillance | Manpower Outsourcing | Facility Management"
 
     },
-      {
-        logo: "location.png",
-        profileName:"Registered Office Address ",
-        profileDetail:"Plot No 59, Upadhyay, Khair, Aligarh- 202138, Uttar Pradesh"
+    //   {
+    //     logo: "location.png",
+    //     profileName:"Registered Office Address ",
+    //     profileDetail:"Plot No 59, Upadhyay, Khair, Aligarh- 202138, Uttar Pradesh"
 
-    },
+    // },
       {
         logo: "location.png",
         profileName:"Corporate Office Address ",
         profileDetail:"A-6 / 2209 Hebitech Panchtatva, Tech Zone IV, Amrapali Dream Valley, Greater Noida west Gautam Buddha Nagar, Uttar Pradesh 201009"
 
     }
+
 ]
