@@ -83,6 +83,9 @@
     justify-content: center;
     font-size: 14px;
   }
+  .special_detail {
+   font-size: 13.2px;
+  }
 }
 @media screen and (max-width: 460px) {
   .aboutcompany {
@@ -113,6 +116,9 @@
     flex-direction: column;
     justify-content: center;
     font-size: 15px;
+  }
+  .special_detail {
+     font-size: 11.9px;
   }
   .profile_name {
     font-size: 17px;
