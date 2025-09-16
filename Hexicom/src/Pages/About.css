@@ -3,10 +3,10 @@
   width: 100%;
 /*   z-index: 9; */
   background: linear-gradient(135deg, #153c65 40%, #007bff 50%, #153c65 75%);
-/*   color: white; */
+  color: white;
 /*   z-index: 9; */
 }
-.AboutCompany {
+.aboutcompany {
   height: 100%;
   display: flex;
 /*   background: linear-gradient(135deg, #153c65 40%, #007bff 50%, #153c65 75%); */
@@ -18,7 +18,7 @@
   padding: 40px 200px 200px 200px;
   gap: 20px;
 }
-.AboutCompany h1 {
+.aboutcompanyheading {
   font-family: "Oswald", sans-serif;
   color: white;
 }
