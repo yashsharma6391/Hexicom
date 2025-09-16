@@ -27,7 +27,7 @@ const About = ({ sidebar, setSidebarfunc }) => {
                 <img src={item.logo} alt="" />
               </div>
               <div className="profile_name">{item.profileName}</div>
-              <div className="profile_details">{item.profileDetail}</div>
+              <div className={`profile_details ${ind === 0 ? "special_detail" : ""}`}>{item.profileDetail}</div>
             </div>
           ))}
         </div>
