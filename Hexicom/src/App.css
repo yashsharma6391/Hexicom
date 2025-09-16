@@ -1,3 +1,7 @@
+/* remove the default mobile tap highlight everywhere */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 .app{
          background-color: rgb(234, 228, 221);
     height: 100%;
