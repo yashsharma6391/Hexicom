@@ -17,8 +17,8 @@ const About = ({ sidebar, setSidebarfunc }) => {
   return (
     <div className="About">
       <Sidebar sidebar={sidebar} />
-      <div className="AboutCompany" data-aos="fade-up">
-        <h1>ABOUT US</h1>
+      <div className="aboutcompany" data-aos="fade-up">
+        <h1 className="aboutcompanyheading">ABOUT US</h1>
 
         <div className="profile_grid">
           {AboutData.map((item, ind) => (
