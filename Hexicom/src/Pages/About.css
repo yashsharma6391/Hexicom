@@ -68,7 +68,7 @@
   padding: 18px;
 }
 @media screen and (max-width: 768px) {
-  .AboutCompany {
+  .aboutcompany {
     padding: 20px 10px 10px 10px;
     height: 100%;
   }
@@ -85,7 +85,7 @@
   }
 }
 @media screen and (max-width: 460px) {
-  .AboutCompany {
+  .aboutcompany {
     padding: 20px 10px 10px 10px;
   }
   .profile_detail {
