@@ -32,11 +32,12 @@ export const contactItems = [
     detailslink:"Dheeraj@hexicom.in",
     link: "",
   },
-  {
-    icon: IoPersonSharp,
-    title: "Contact Person Directorate alternate",
-    detailstitle: "Mrs. Neetu Sharma | 9694430025",
-    detailslink:"Neetu@hexicom.in",
-    link: "",
-  },
+  // {
+  //   icon: IoPersonSharp,
+  //   title: "Contact Person Directorate alternate",
+  //   detailstitle: "Mrs. Neetu Sharma | 9694430025",
+  //   detailslink:"Neetu@hexicom.in",
+  //   link: "",
+  // },
 ];
+
