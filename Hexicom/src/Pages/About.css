@@ -2,14 +2,14 @@
   margin-top: 72px;
   width: 100%;
 /*   z-index: 9; */
-  background: linear-gradient(135deg, #153c65 40%, #007bff 50%, #153c65 75%);
+/*   background: linear-gradient(135deg, #153c65 40%, #007bff 50%, #153c65 75%); */
   color: white;
 /*   z-index: 9; */
 }
 .AboutCompany {
   height: 100%;
   display: flex;
-
+  background: linear-gradient(135deg, #153c65 40%, #007bff 50%, #153c65 75%);
   overflow: hidden;
   justify-content: center;
   align-items: center;
