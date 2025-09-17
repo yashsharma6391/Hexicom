@@ -9,6 +9,7 @@ import Contact from './Pages/Contact'
 import About from './Pages/About'
 import Address from './Pages/Address'
 import ScrollToTop from './Component/ScrollToTop'
+import Service from './Pages/Service'
 
 function App() {
   const [sidebar, setSidebar] = useState(true)
