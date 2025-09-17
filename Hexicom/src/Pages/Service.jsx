@@ -4,7 +4,7 @@ import "./Service.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ServicesData } from "../ServicesData";
+import { ServicesData } from "./ServicesData";
 
 const Service = ({ sidebar, setSidebarfunc }) => {
   useEffect(() => {
@@ -79,3 +79,4 @@ const Service = ({ sidebar, setSidebarfunc }) => {
 };
 
 export default Service;
+
