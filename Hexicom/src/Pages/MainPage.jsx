@@ -152,7 +152,6 @@ const MainPage = ({ sidebar, setSidebarfunc }) => {
             <li>◻	Hierarchy less matrix organization</li>
             <li>◻	Teams based organization driven by project needs</li>
             <li>◻	Leadership evolution</li>
-            <li>◻	Leadership evolution</li>
             <li>◻	Informal work culture</li>
             <li>◻	Knowledge creation & sharing</li>
             <li>◻	Respect for individual</li>
