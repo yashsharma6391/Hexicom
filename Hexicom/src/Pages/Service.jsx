@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef, useState  } from "react";
 import "./Service.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
 import AOS from "aos";
@@ -104,5 +104,6 @@ const Service = ({ sidebar, setSidebarfunc }) => {
 };
 
 export default Service;
+
 
 
