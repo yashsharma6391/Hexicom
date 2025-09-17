@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import NavbarLogo from "./NavbarLogo";
+
 import { Link } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { FiX } from "react-icons/fi";
