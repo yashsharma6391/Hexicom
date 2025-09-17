@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 
-import './App.css'
-import Navbar from './Component/Navbar/Navbar'
-import MainPage from './Pages/MainPage'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Sidebar from './Component/Sidebar/Sidebar'
-import Contact from './Pages/Contact'
-import About from './Pages/About'
-import Address from './Pages/Address'
-import ScrollToTop from './Component/ScrollToTop'
-import Service from './Pages/Service'
-
+import './App.css';
+import Navbar from './Component/Navbar/Navbar';
+import MainPage from './Pages/MainPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Sidebar from './Component/Sidebar/Sidebar';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
+import Address from './Pages/Address';
+import ScrollToTop from './Component/ScrollToTop';
+import Service from './Pages/Service';
+import Footer from './Component/Footer'
 function App() {
   const [sidebar, setSidebar] = useState(true)
   const setSidebarfunc =(value)=>{
@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>
       <ScrollToTop/>
       <Navbar setSidebarfunc={setSidebarfunc} sidebar={sidebar}/>
-      
+      <Footer/>
       {/* <Sidebar sidebar={sidebar}/> */}
       <Routes>
          <Route path="/" element={<MainPage sidebar={sidebar} setSidebarfunc={setSidebarfunc}/>} />
