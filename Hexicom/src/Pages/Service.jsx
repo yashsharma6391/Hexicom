@@ -1,3 +1,4 @@
+import React, { useRef, useState } from "react";
 import React from "react";
 import { useEffect } from "react";
 import "./Service.css";
@@ -7,6 +8,8 @@ import "aos/dist/aos.css";
 import { ServicesData } from "./ServicesData";
 
 const Service = ({ sidebar, setSidebarfunc }) => {
+  const refs = useRef([]);
+  const [visible, setVisible] = useState([]);
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -15,6 +18,23 @@ const Service = ({ sidebar, setSidebarfunc }) => {
   }, []);
   useEffect(() => {
     setSidebarfunc(false);
+  }, []);
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const idx = Number(entry.target.dataset.index);
+            setVisible((prev) => (prev.includes(idx) ? prev : [...prev, idx]));
+            observer.unobserve(entry.target); 
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    refs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
   }, []);
   return (
     <div className="services_page">
@@ -35,7 +55,12 @@ const Service = ({ sidebar, setSidebarfunc }) => {
           </div>
           <div className="service_grid">
             {ServicesData.map((category, ind) => (
-              <div className="single_service_card" key={ind}>
+              <div    className={`single_service_card ${
+                  visible.includes(ind) ? "in-view" : ""
+                }`}
+                key={ind}
+                data-index={ind}
+                ref={(el) => (refs.current[ind] = el)}>
                 <div className="service_logo">
                   <img src={category.Image} alt="" />
                 </div>
@@ -79,4 +104,5 @@ const Service = ({ sidebar, setSidebarfunc }) => {
 };
 
 export default Service;
+
 
