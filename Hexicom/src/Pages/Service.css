@@ -145,7 +145,7 @@
 
     }
     .service_name{
-    font-size: 19px ;
+    font-size: 14px ;
     font-weight: 600;
     font-family: sans-serif;
 
@@ -154,7 +154,7 @@
     height: 150px;
    }
    .service_type{
-    font-size: 13px;
+    font-size: 10px;
     font-weight:700;
     font-family: serif;
     width: 100%;
@@ -212,6 +212,7 @@
   }
 
 }
+
 
 
 
