@@ -62,6 +62,17 @@
     box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.6s ease-in-out ;
+    cursor: pointer;
+}
+.single_service_card.in-view{
+    transform: scale(1);
+   opacity: 1;
+}
+.single_service_card.in-view:hover{
+    transform: scale(1.05);
 }
 .service_logo{
     height: 300px;
@@ -212,6 +223,7 @@
   }
 
 }
+
 
 
 
