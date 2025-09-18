@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
 import { AboutData } from "./AboutData";
+import { Helmet } from "react-helmet-async";
+
 const About = ({ sidebar, setSidebarfunc }) => {
   useEffect(() => {
     setSidebarfunc(false);
@@ -16,6 +18,10 @@ const About = ({ sidebar, setSidebarfunc }) => {
   }, []);
   return (
     <div className="About">
+      <Helmet>
+        <title>About Hexicom</title>
+        <meta name="description" content="detail about our company office and legal status main area of activity"/>
+      </Helmet>
       <Sidebar sidebar={sidebar} />
       <div className="aboutcompany" data-aos="fade-up">
         <h1 className="aboutcompanyheading">ABOUT US</h1>
