@@ -3,7 +3,6 @@ import "./MainPage.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
-import { Helmet } from "react-helmet-async";
 const MainPage = ({ sidebar, setSidebarfunc }) => {
   useEffect(() => {
     AOS.init({
@@ -16,12 +15,7 @@ const MainPage = ({ sidebar, setSidebarfunc }) => {
   }, []);
   return (
     <div className="mainpage">
-      <Helmet>
-        <title>Hexicom company</title>
-        <meta  name="description" content="Incorporated in 2025, our company represents the culmination of nearly
-          two decades of industry experience, visionary leadership, and a
-          relentless pursuit of excellence."/>
-      </Helmet>
+     
       <Sidebar sidebar={sidebar} />
       <div className="AboutCompany">
         <h1 data-aos="fade-up">Company Overview</h1>
