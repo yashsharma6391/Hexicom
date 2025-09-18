@@ -6,7 +6,6 @@ import Sidebar from "../Component/Sidebar/Sidebar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ServicesData } from "./ServicesData";
-import { Helmet } from "react-helmet-async";
 
 const Service = ({ sidebar, setSidebarfunc }) => {
   const refs = useRef([]);
@@ -39,10 +38,7 @@ const Service = ({ sidebar, setSidebarfunc }) => {
   }, []);
   return (
     <div className="services_page">
-        <Helmet>
-        <title>Services of Hexixom</title>
-        <meta name="description" content="Details about our company services and know more about our services" />
-      </Helmet>
+      
       <Sidebar sidebar={sidebar} />
       <div className="services_container" data-aos="fade-up">
         <div className="service_content">
@@ -109,6 +105,7 @@ const Service = ({ sidebar, setSidebarfunc }) => {
 };
 
 export default Service;
+
 
 
 
