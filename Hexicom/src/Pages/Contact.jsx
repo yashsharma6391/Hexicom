@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../Component/Sidebar/Sidebar";
 import { contactItems } from "./ContactData";
-import { Helmet } from "react-helmet-async";
+
 
 const Contact = ({ sidebar, setSidebarfunc }) => {
   useEffect(() => {
@@ -18,10 +18,7 @@ const Contact = ({ sidebar, setSidebarfunc }) => {
   }, []);
   return (
     <div className="contact_page">
-      <Helmet>
-        <title>Contact Information</title>
-        <meta name="description" content="for contact for work with hexicom and know more about our comapany" />
-      </Helmet>
+     
       <Sidebar sidebar={sidebar} />
       <div className="contact" data-aos="fade-up">
         <h1>CONTACT INFORMATION</h1>
