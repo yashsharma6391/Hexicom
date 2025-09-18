@@ -5,19 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npx react-snap",
+    "build": "vite build ",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-   "reactSnap": {
-   "source": "dist"  ,
-   "include":["/","/about", "/contact",  "/services"]      
-  },
+ 
   "dependencies": {
     "aos": "^2.3.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.8.2"
   },
@@ -30,7 +26,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
-    "react-snap": "^1.13.1",
     "vite": "^7.1.2"
   }
 }
